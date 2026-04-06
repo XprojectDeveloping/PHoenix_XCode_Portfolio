@@ -1,0 +1,115 @@
+{
+  "header": [
+    {
+      "id": 1,
+      "to": "/",
+      "name_ru": "Проекты",
+      "name_az": "Layihələr",
+      "name_en": "Projects"
+    },
+    {
+      "id": 2,
+      "to": "/",
+      "name_ru": "Контакты",
+      "name_az": "Əlaqə",
+      "name_en": "Contacts"
+    }
+  ],
+  "main": {
+    "titleUp_ru": "Привет, я",
+    "titleUp_az": "Salam, mən",
+    "titleUp_en": "Hey, I’m",
+    "titleDown_ru": "Phoenix_XCode",
+    "titleDown_az": "Phoenix_XCode",
+    "titleDown_en": "Phoenix_XCode",
+    "text_ru": "Я — Frontend-разработчик, создающий высокопроизводительные продукты, которые живут в сети. Я специализируюсь на верстке интуитивно понятных интерфейсов и разработке масштабируемых веб-приложений с нуля. Соединяя дизайн и технологии, я слежу за тем, чтобы каждый продукт не только выглядел эстетично, но и безупречно работал на любых устройствах",
+    "text_az": "Mən Frontend Developerəm və internet mühitində yaşayan yüksək məhsuldarlıqlı layihələr yaradıram. Əsas fəaliyyətim rahat istifadəçi interfeyslərinin yığılması və sıfırdan genişmiqyaslı veb-tətbiqlərin hazırlanmasıdır. Dizayn və texnologiya arasında körpü quraraq, hər bir məhsulun həm gözəl görünməsini, həm də bütün cihazlarda qüsursuz çalışmasını təmin edirəm.",
+    "text_en": "I am a Frontend Developer dedicated to building high-performance products that live on the web. My expertise lies in crafting seamless user interfaces and developing scalable web applications from scratch. I bridge the gap between design and technology, ensuring that every product not only looks stunning but also functions flawlessly across all devices.",
+
+    "mainLink": [
+      {
+        "id": 1,
+        "name": "Email",
+        "img": "/imgs/link-email.svg",
+        "alt": "Email",
+        "href": "mailto:xwork.user1@mail.ru"
+      },
+      {
+        "id": 2,
+        "name": "GitHub",
+        "img": "/imgs/link-github.svg",
+        "alt": "GitHub",
+        "href": "https://github.com/XprojectDeveloping"
+      }
+    ],
+    "mainExperience": {
+      "title_ru": "Опыт",
+      "title_az": "Təcrübə",
+      "title_en": "Experience",
+      "cards": [
+        {
+          "id": 1,
+          "cardTitle": "HTML CSS JavaScript",
+          "cardText_ru": "Создаю адаптивные и кроссбраузерные веб-сайты, которые работают на всех устройствах и браузерах. Я использую HTML для структуры, CSS для стилей и JavaScript для интерактивности, чтобы создавать привлекательные и функциональные веб-страницы.",
+          "cardText_az": "Bütün cihazlarda və brauzərlərdə işləyən adaptiv və krossbrauzər Web-saytlar yaradıram. Web-səhifələri cəlbedici və funksional etmək üçün struktur üçün HTML, dizayin üçün CSS və interaktivlik üçün JavaScript istifadə edirəm.",
+          "cardText_en": "I create responsive and cross-browser compatible websites that work on all devices and browsers. I use HTML for structure, CSS for styling, and JavaScript for interactivity to build engaging and functional web pages."
+        },
+        {
+          "id": 2,
+          "cardTitle": "ReactJS",
+          "cardText_ru": "Создаю современные веб-приложения с использованием ReactJS. Я использую компонентный подход для создания переиспользуемых элементов интерфейса и управляю состоянием приложений с помощью Redux, Redux Toolkit.",
+          "cardText_az": "ReactJS ilə ən yaxşı veb tətbiqlər yaradıram. Mən komponent əsaslı yanaşmadan istifadə edirəm və Redux, Redux Toolkit ilə tətbiqin durumunu idarə edirəm.",
+          "cardText_en": "I create modern web applications using ReactJS. I use a component-based approach to build reusable interface elements and manage application state with Redux, Redux Toolkit."
+        },
+        {
+          "id": 3,
+          "cardTitle": "NextJS",
+          "cardText_ru": "Разрабатываю серверные рендеринг-приложения с помощью NextJS. Я использую его для создания высокопроизводительных и SEO-оптимизированных веб-приложений, которые обеспечивают отличный пользовательский опыт.",
+          "cardText_az": "NextJS ilə server tərəfindən render edilən tətbiqlər hazırlayıram. Onu yüksək performanslı və SEO-optimallaşdırılmış veb-tətbiqlər yaratmaq üçün istifadə edirəm, bu da istifadəçilərə əla təcrübə təmin edir.",
+          "cardText_en": "I develop server-rendered applications using NextJS. I use it to create high-performance and SEO-optimized web applications that provide an excellent user experience."
+        }
+      ]
+    },
+    "mainProjects": {
+      "title_ru": "Проекты",
+      "title_az": "Layihələr",
+      "title_en": "Projects",
+
+      "cards": [
+        {
+          "id": 1,
+          "img": "/imgs/temp-img.png",
+          "alt": "ContractorX",
+          "title": "ContractorX",
+          "technologies": ["ReactJS, SwiperJS, TailWindCSS, FrameMotion"],
+          "linkImg_git": "/imgs/link-github.svg",
+          "altGit": "GitHub",
+          "linkGit": "https://github.com/XprojectDeveloping/R-ContractorX",
+          "link_ru": "Демо",
+          "link_az": "Demo",
+          "link_en": "Live Demo",
+          "to": "https://r-contractor-x.vercel.app/"
+        },
+        {
+          "id": 2,
+          "img": "/imgs/temp-img2.png",
+          "alt": "Baghiroff",
+          "title": "Baghiroff",
+          "technologies": ["ReactJS, SwiperJS, TailWindCSS, FrameMotion"],
+          "linkImg_git": "/imgs/link-github.svg",
+          "altGit": "GitHub",
+          "linkGit": "https://github.com/XprojectDeveloping/R-Baghiroff",
+          "link_ru": "Демо",
+          "link_az": "Demo",
+          "link_en": "Live Demo",
+          "to": "https://www-r-baghiroff.vercel.app/"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "text_ru": "© 2026 Phoenix_XCode. Все права защищены.",
+    "text_az": "© 2026 Phoenix_XCode. Bütün hüquqlar qorunur.",
+    "text_en": "© 2026 Phoenix_XCode. All rights reserved."
+  }
+}

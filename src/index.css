@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-size: 62.5%;
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-secondary: #f5f5f5;
+  --text: #1a1a1a;
+  --text-secondary: #555555;
+  --border: #e0e0e0;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f0f0f;
+  --bg-secondary: #1a1a1a;
+  --text: #f0f0f0;
+  --text-secondary: #aaaaaa;
+  --border: #2e2e2e;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.card-item {
+  padding: 2rem;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(to right, #9845e8, #33d2ff, #dd5789);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.link-card {
+  padding: 1rem;
+  border: 2px solid transparent;
+  background-image:
+    linear-gradient(var(--bg), var(--bg)),
+    linear-gradient(to right, #9845e8, #33d2ff, #dd5789);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.button-reset {
+  border: none;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9845e8;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
