@@ -1,5 +1,3 @@
-import headerSun from "../../../public/imgs/header-sun.svg";
-import headerMoon from "../../../public/imgs/header-moon.svg";
 import { useTheme } from "../ThemeContext/ThemeContext";
 const ThemeToggle = () => {
   const { theme, toggleTheme } = useTheme();
@@ -11,9 +9,19 @@ const ThemeToggle = () => {
       aria-label="Toggle Theme"
     >
       {theme === "dark" ? (
-        <img className="max-w-[26px]" src={headerSun} alt="header-sun" />
+        <img
+          className="max-w-[26px]"
+          src={"/imgs/header-sun.svg"}
+          alt="header-sun"
+          loading="lazy"
+        />
       ) : (
-        <img className="max-w-[26px]" src={headerMoon} alt="header-moon" />
+        <img
+          className="max-w-[26px]"
+          src={"/imgs/header-moon.svg"}
+          alt="header-moon"
+          loading="lazy"
+        />
       )}
     </button>
   );

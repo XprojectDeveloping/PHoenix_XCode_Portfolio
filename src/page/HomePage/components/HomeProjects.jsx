@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { getMultiLang as ml } from "../../../components/Language/translation/Multilang.js";
 import { Link } from "react-router-dom";
-import linkDemo from "../../../../public/imgs/link-demo.svg";
 import { useTheme } from "../../../components/ThemeContext/ThemeContext.jsx";
 const HomeProjects = ({ data }) => {
   const [t, i18n] = useTranslation("translation");
@@ -54,8 +53,9 @@ const HomeProjects = ({ data }) => {
                 >
                   <img
                     className={`max-w-[2.5rem] ${theme === "light" ? "invert" : ""}`}
-                    src={linkDemo}
-                    alt="link-demo"
+                    src={item?.link_demo_img}
+                    alt={item?.link_demo_img_alt}
+                    loading="lazy"
                   />
                   {ml(
                     item?.link_ru || "",
@@ -69,6 +69,7 @@ const HomeProjects = ({ data }) => {
                     className={`max-w-[3.5rem] ${theme === "light" ? "invert" : ""}`}
                     src={item?.linkImg_git}
                     alt={item?.altGit}
+                    loading="lazy"
                   />
                 </Link>
               </div>

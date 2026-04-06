@@ -81,6 +81,8 @@
           "link_ru": "Демо",
           "link_az": "Demo",
           "link_en": "Live Demo",
+          "link_demo_img": "/imgs/link-demo.svg",
+          "link_demo_img_alt": "Live Demo",
           "to": "https://r-contractor-x.vercel.app/"
         },
         {
@@ -95,6 +97,8 @@
           "link_ru": "Демо",
           "link_az": "Demo",
           "link_en": "Live Demo",
+          "link_demo_img": "/imgs/link-demo.svg",
+          "link_demo_img_alt": "Live Demo",
           "to": "https://www-r-baghiroff.vercel.app/"
         }
       ]
