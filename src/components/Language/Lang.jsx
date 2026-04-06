@@ -17,7 +17,7 @@ function Lang({ toggle, swichLang }) {
           onClick={toggle}
         >
           <button
-            className="uppercase text-[1.8rem] md:text-[1.6rem] sm:text-[1.3rem]"
+            className="uppercase text-[1.8rem] md:text-[1.6rem] sm:text-[1.3rem] outline-none"
             name="button"
             type="button"
           >

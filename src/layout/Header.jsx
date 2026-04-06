@@ -27,7 +27,7 @@ const Header = ({ headerData }) => {
             toggle={() => setOpen(!open)}
             swichLang={
               open && (
-                <div className="absolute mt-6 left-[-32px] top-2 w-[80px] h-[50px] flex flex-col items-center">
+                <div className="absolute mt-6 left-[-30px] top-2 w-[80px] h-[50px] flex flex-col items-center">
                   {langFilter?.map((item, index) => {
                     return (
                       <button
