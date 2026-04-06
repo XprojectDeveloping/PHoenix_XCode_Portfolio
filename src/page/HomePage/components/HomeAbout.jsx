@@ -44,6 +44,7 @@ const HomeAbout = ({ data }) => {
                   src={item?.img}
                   className={`max-w-[16px] ${theme === "light" ? "invert" : ""}`}
                   alt={item?.alt}
+                  loading="lazy"
                 />
                 {item?.name}
               </a>

@@ -27,6 +27,7 @@ const HomeProjects = ({ data }) => {
                 className="max-w-[40rem] sm:max-w-full"
                 src={item?.img}
                 alt={item?.alt}
+                loading="lazy"
               />
 
               <h3 className="text-[2rem] sm:text-[1.5rem] font-[600]">
