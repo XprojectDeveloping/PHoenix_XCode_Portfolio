@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import { getMultiLang as ml } from "../../../components/Language/translation/Multilang.js";
-import UseTheme from "../../../components/UseTheme/UseTheme.jsx";
+import { useTheme } from "../../../components/ThemeContext/ThemeContext.jsx";
 const HomeAbout = ({ data }) => {
   const [t, i18n] = useTranslation("translation");
-  const { theme, toggleTheme } = UseTheme();
+  const { theme, toggleTheme } = useTheme();
   return (
     <section className="mb-[10rem] lg:mb-[8rem] md:mb-[6rem] sm:mb-[3rem]">
       <div className="mb-[10rem] lg:mb-[8rem] md:mb-[6rem] sm:mb-[3rem]">
@@ -42,9 +42,7 @@ const HomeAbout = ({ data }) => {
               >
                 <img
                   src={item?.img}
-                  className={`max-w-[16px] transition-all duration-300 ${
-                    theme === "ligth" ? "imgWhite" : "invert brightness-200"
-                  }`}
+                  className={`max-w-[16px] ${theme === "light" ? "invert" : ""}`}
                   alt={item?.alt}
                 />
                 {item?.name}

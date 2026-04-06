@@ -2,9 +2,10 @@ import { useTranslation } from "react-i18next";
 import { getMultiLang as ml } from "../../../components/Language/translation/Multilang.js";
 import { Link } from "react-router-dom";
 import linkDemo from "../../../../public/imgs/link-demo.svg";
+import { useTheme } from "../../../components/ThemeContext/ThemeContext.jsx";
 const HomeProjects = ({ data }) => {
   const [t, i18n] = useTranslation("translation");
-
+  const { theme, toggleTheme } = useTheme();
   return (
     <section className="mb-[15rem] lg:mb-[11rem] md:mb-[6rem] sm:mb-[5.5rem]">
       <div className="mb-[4rem]">
@@ -41,7 +42,7 @@ const HomeProjects = ({ data }) => {
                 )}
               </p> */}
 
-              <p className="text-[1.6rem] font-[200] text-[#6CACE4]">
+              <p className="text-[1.6rem] sm:text-[1.3rem] font-[200] text-[#6CACE4]">
                 {item?.technologies}
               </p>
 
@@ -52,7 +53,7 @@ const HomeProjects = ({ data }) => {
                   target="_blank"
                 >
                   <img
-                    className="max-w-[20px]"
+                    className={`max-w-[2.5rem] ${theme === "light" ? "invert" : ""}`}
                     src={linkDemo}
                     alt="link-demo"
                   />
@@ -65,7 +66,7 @@ const HomeProjects = ({ data }) => {
 
                 <Link to={item?.linkGit} target="_blank">
                   <img
-                    className="max-w-[4rem]"
+                    className={`max-w-[3.5rem] ${theme === "light" ? "invert" : ""}`}
                     src={item?.linkImg_git}
                     alt={item?.altGit}
                   />

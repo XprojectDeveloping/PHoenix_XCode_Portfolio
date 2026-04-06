@@ -20,14 +20,14 @@ const Header = ({ headerData }) => {
 
   const langFilter = langs?.filter(filteredLang);
   return (
-    <header className="my-[4rem] mb-[15rem] lg:mb-[8rem] md:mb-[6rem] sm:mb-[3rem] max-w-[1100px] m-auto xl:mx-[4.5rem] lg:mx-[3.5rem] md:mx-[2.5rem] sm:mx-[1.8rem]">
+    <header className="my-[4rem] mb-[15rem] lg:mb-[8rem] md:mb-[6rem] sm:mb-[4rem] max-w-[1100px] m-auto xl:mx-[4.5rem] lg:mx-[3.5rem] md:mx-[2.5rem] sm:mx-[1rem]">
       <div className="flex items-center justify-between">
         <div>
           <Lang
             toggle={() => setOpen(!open)}
             swichLang={
               open && (
-                <div className="absolute mt-6 left-[-29px] top-4 w-[80px] h-[50px] flex flex-col items-center">
+                <div className="absolute mt-6 left-[-32px] top-2 w-[80px] h-[50px] flex flex-col items-center">
                   {langFilter?.map((item, index) => {
                     return (
                       <button

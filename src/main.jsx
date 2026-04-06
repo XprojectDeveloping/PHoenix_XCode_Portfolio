@@ -7,6 +7,7 @@ import i18next from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import resources from "./components/Language/translation/Index.js";
 import { BrowserRouter } from "react-router-dom";
+import { ThemeProvider } from "./components/ThemeContext/ThemeContext.jsx";
 const defaultLanguage = ["ru"];
 i18next.use(LanguageDetector, initReactI18next).init({
   resources,
@@ -18,7 +19,9 @@ i18next.use(LanguageDetector, initReactI18next).init({
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
     <I18nextProvider i18n={i18next}>
-      <App />
+      <ThemeProvider>
+        <App />
+      </ThemeProvider>
     </I18nextProvider>
   </BrowserRouter>,
 );

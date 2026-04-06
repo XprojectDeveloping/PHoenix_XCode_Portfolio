@@ -6,13 +6,6 @@
       "name_ru": "Проекты",
       "name_az": "Layihələr",
       "name_en": "Projects"
-    },
-    {
-      "id": 2,
-      "to": "/",
-      "name_ru": "Контакты",
-      "name_az": "Əlaqə",
-      "name_en": "Contacts"
     }
   ],
   "main": {
